@@ -76,19 +76,19 @@ app.get('/', function (req, res) {
 app.get('/libform/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'libform', 'index.html'));
 });
-app.get('/libform/js/bootstrap.min.js', function (req, res) {
+app.get('/ui/libform/js/bootstrap.min.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'libform', 'js', 'bootstrap.min.js'));
 });
-app.get('/libform/pdfmake/pdfmake.min.js', function (req, res) {
+app.get('/ui/libform/pdfmake/pdfmake.min.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'libform', 'pdfmake', 'pdfmake.min.js'));
 });
-app.get('/libform/lookup.js', function (req, res) {
+app.get('/ui/libform/lookup.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'libform', 'lookup.js'));
 });
-app.get('/libform/pdf.js', function (req, res) {
+app.get('/ui/libform/pdf.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'libform', 'pdf.js'));
 });
-app.get('/libform/pdfmake/vfs_fonts.js', function (req, res) {
+app.get('/ui/libform/pdfmake/vfs_fonts.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'libform', 'pdfmake', 'vfs_fonts.js'));
 });
 app.get('/ui/libform/css/myStyle.css', function (req, res) {
