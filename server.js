@@ -111,7 +111,7 @@ app.get('/ui/bootstrap.min.js', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-app.use('/librequest', express.static('ui/libform'));
+//app.use('/librequest', express.static('ui/libform'));
 //app.use('/ui/libform', express.static(__dirname + '/ui/libform'));
 //app.use(express.static(__dirname + 'ui/libform/'));
 //app.use(express.static(path.join(__dirname, 'ui/libform/')));
