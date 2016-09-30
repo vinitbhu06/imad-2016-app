@@ -74,8 +74,29 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/libform', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'libform'));
+  res.sendFile(path.join(__dirname, 'ui', 'libform', 'index.html'));
 });
+app.get('/libform/js/bootstrap.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'libform', 'js', 'bootstrap.min.js'));
+});
+app.get('/libform/pdfmake/pdfmake.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'libform', 'pdfmake', 'pdfmake.min.js'));
+});
+app.get('/libform/lookup.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'libform', 'lookup.js'));
+});
+app.get('/libform/pdf.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'libform', 'pdf.js'));
+});
+app.get('/libform/pdfmake/vfs_fonts.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'libform', 'pdfmake', 'vfs_fonts.js'));
+});
+
+
+
+
+
+
 /*app.get('/:articleName', function (req, res) {
     var articleName = req.params.articleName;
     console.log(`${articleName}`);
