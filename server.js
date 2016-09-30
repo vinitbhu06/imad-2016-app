@@ -73,7 +73,7 @@ function createTemplate (data){
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/libform/', function (req, res) {
+app.get('/ui/libform/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'libform', 'index.html'));
 });
 app.get('/ui/libform/js/bootstrap.min.js', function (req, res) {
