@@ -94,7 +94,9 @@ app.get('/ui/libform/pdfmake/vfs_fonts.js', function (req, res) {
 app.get('/ui/libform/css/myStyle.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'libform', 'css', 'myStyle.css'));
 });
-
+app.get('/ui/libform/img/wait.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'libform', 'img', 'wait.gif'));
+});
 
 
 
